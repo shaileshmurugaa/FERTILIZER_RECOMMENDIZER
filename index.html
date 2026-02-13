@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fertilizer Cluster Predictor</title>
+</head>
+<body>
+    <h2>Hybrid Clustering Predictor</h2>
+
+    <form action="/predict" method="post">
+        Soil Moisture: <input type="text" name="Soil_Moisture"><br>
+        Humidity: <input type="text" name="Humidity"><br>
+        Temperature: <input type="text" name="Temperature"><br>
+        Soil Type: <input type="text" name="Soil_Type"><br>
+        State: <input type="text" name="State"><br>
+        District: <input type="text" name="District"><br>
+        Crop Type: <input type="text" name="Crop_Type"><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
